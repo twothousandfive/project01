@@ -1,0 +1,31 @@
+:root {
+    --color-white: #fff;
+    --color-light-grey: #e2e2e2;
+    --color-dark-grey: #4e4e4e;
+    --background-dark: #1b1b1b;
+    --background-light-grey: #e2e2e2;
+    --background-light: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+  

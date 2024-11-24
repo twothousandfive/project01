@@ -1,0 +1,57 @@
+body {
+    font-family: Bahnschrift;
+    background-color: var(--background-dark);
+    color: var(--color-light-grey);
+    height: 200vh;
+}
+.top-header {
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    height: 65px;
+    top: 0;
+    padding: 10px 80px;
+    background-color: var(--color-dark-grey);
+}
+.logo {
+    font-size: 36px;
+    letter-spacing: 2px;
+    width: 1fr;
+}
+.search {
+    height: 50%;
+    width: 400px;
+    text-align: center;
+}
+.search input {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.nav {
+    display: flex;
+    width: 1fr;
+    gap: 30px;
+}
+.nav img {
+    clip-path: circle();
+    width: 60px;
+}
+.cart-icon {
+    display: flex;
+    flex-direction: column;
+}
+.cart-icon i {
+    font-size: 30px;
+    text-align: center;
+}
+main {
+    padding: 15px 80px;
+}
+.header480 {
+    display: none;
+}
