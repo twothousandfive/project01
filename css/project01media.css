@@ -13,10 +13,9 @@
     }
     .search input {
         height: 100%;
-        border-radius: 10px;
-        border: none;
         outline: none;
         font-size: larger;
+        padding-left: 50px;
     }
     .search input:focus {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 10px 0px;
@@ -30,12 +29,42 @@
     }
     .banner {
         height: 250px;
+        order: 2;
     }
     .banner-1 {
         display: none;
     }
     .banner-2 {
         width: 100%;
+    }
+    .title-discount {
+        display: none;
+    }
+    .discount {
+        margin: 0 0 20px 0;
+        order: 1;
+    }
+    .title-category {
+        order: 3;
+    }
+    .category-product {
+        order: 4;
+    }
+    .title-discounts {
+        order: 5;
+    }
+    .discounts {
+        order: 6;
+        grid-template-columns: 1fr 1fr;
+    }
+    .discounts > .product {
+        height: 300px;
+    }
+    .product-body > .product-title {
+        font-size: 20px;
+    }
+    .product-body > div > span {
+        font-size: 22px;
     }
     .header480 {
         display: flex;
@@ -54,5 +83,33 @@
     .header480 img {
         clip-path: circle();
         width: 35px;
+    }
+    footer {
+        padding-bottom: 65px;
+    }
+    footer > .footer-top {
+        padding: 10px 20px;
+        grid-template-columns: 1fr 100px;
+    }
+    .footer-top > div > span {
+        font-size: 12px;
+    }
+    .left {
+        justify-content: center;
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e2e2e2;
+        cursor: pointer;
+    }
+    .footer-bottom {
+        padding: 10px 20px;
+    }
+    .footer-bottom-nav {
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
     }
 }

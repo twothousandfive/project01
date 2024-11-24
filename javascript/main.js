@@ -30,3 +30,7 @@ function scrollToNextSlide() {
 
 setInterval(scrollToNextSlide, 2000);
 
+function discountAll() {
+  const discountContainer = document.querySelector('.discount');
+  discountContainer.classList.toggle('discount-all');
+}
