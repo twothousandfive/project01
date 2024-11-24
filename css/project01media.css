@@ -28,6 +28,15 @@
     main {
         padding: 10px 15px;
     }
+    .banner {
+        height: 250px;
+    }
+    .banner-1 {
+        display: none;
+    }
+    .banner-2 {
+        width: 100%;
+    }
     .header480 {
         display: flex;
         justify-content: space-around;
