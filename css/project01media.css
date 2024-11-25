@@ -66,6 +66,9 @@
     .product-body > div > span {
         font-size: 20px;
     }
+    .product-body > .product-price {
+        font-size: 16px;
+    }
     .header480 {
         display: flex;
         justify-content: space-around;
