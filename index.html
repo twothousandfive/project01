@@ -9,12 +9,9 @@
     <link rel="stylesheet" href="./css/project01media.css">
     <title>project01</title>
 </head>
-<body>
+<body id="body">
     <div id="page-preloader" class="preloader">
         <div class="loader"></div>
-    </div>
-    <div class="top-header">
-        top-header
     </div>
     <header id="header">
        <div class="logo"><a href="#">BAYER</a></div>
@@ -70,73 +67,69 @@
             <span>Скидки</span>
         </div>
         <div class="discounts">
-            <div class="product">
-                <div class="product-img"><a href=""><span class="add-wish"><i class="bi bi-suit-heart-fill"></i></span></a><img src="./img-product/apple.jpg"></div>
+            <div class="product" onclick="productInCart()">
+                <div class="product-img"><img src="./img-category/fruits.jpg"></div>
                 <div class="product-body">
-                    <span class="product-title">Яблоки Американка Казахстан кг efref f dewfew fwfew</span> <!--max-font 46-->
+                    <span class="product-title">Персик Алматы</span>
                     <div>
-                        <span class="product-price">2 815 ₸/уп</span>
-                        <span><a href="#" class="product-cart"><i class="bi bi-cart-plus"></a></i></span>
+                        <span class="product-value">1 кг</span>
+                        <span class="product-price">2 815<span>&nbsp;₸</span></span>
+                        <button class="product-cart"><i class="bi bi-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
-            
+
             <div class="product">
-                <div class="product-img"><a href=""><span class="add-wish"><i class="bi bi-suit-heart-fill"></i></span></a><img src="./img-product/apple.jpg"></div>
+                <div class="product-img"><img src="./img-category/fruits.jpg"></div>
                 <div class="product-body">
-                    <span class="product-title">Яблоки Американка Казахстан кг</span>
+                    <span class="product-title">Персик Алматы</span>
                     <div>
-                        <span>2 815 ₸/уп</span>
-                        <span><a href="#" class="product-cart"><i class="bi bi-cart-plus"></a></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-img"><a href=""><span class="add-wish"><i class="bi bi-suit-heart-fill"></i></span></a><img src="./img-product/apple.jpg"></div>
-                <div class="product-body">
-                    <span class="product-title">Яблоки Американка Казахстан кг</span>
-                    <div>
-                        <span>2 815 ₸/уп</span>
-                        <span><a href="#" class="product-cart"><i class="bi bi-cart-plus"></a></i></span>
+                        <span class="product-value">1 кг</span>
+                        <span class="product-price">2 815<span>&nbsp;₸</span></span>
+                        <button class="product-cart"><i class="bi bi-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
             <div class="product">
-                <div class="product-img"><a href=""><span class="add-wish"><i class="bi bi-suit-heart-fill"></i></span></a><img src="./img-product/apple.jpg"></div>
+                <div class="product-img"><img src="./img-category/fruits.jpg"></div>
                 <div class="product-body">
-                    <span class="product-title">Яблоки Американка Казахстан кг</span>
+                    <span class="product-title">Персик Алматы</span>
                     <div>
-                        <span>2 815 ₸/уп</span>
-                        <span><a href="#" class="product-cart"><i class="bi bi-cart-plus"></a></i></span>
+                        <span class="product-value">1 кг</span>
+                        <span class="product-price">2 815<span>&nbsp;₸</span></span>
+                        <button class="product-cart"><i class="bi bi-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
             <div class="product">
-                <div class="product-img"><a href=""><span class="add-wish"><i class="bi bi-suit-heart-fill"></i></span></a><img src="./img-product/apple.jpg"></div>
+                <div class="product-img"><img src="./img-category/fruits.jpg"></div>
                 <div class="product-body">
-                    <span class="product-title">Яблоки Американка Казахстан кг</span>
+                    <span class="product-title">Персик Алматы</span>
                     <div>
-                        <span>2 815 ₸/уп</span>
-                        <span><a href="#" class="product-cart"><i class="bi bi-cart-plus"></a></i></span>
+                        <span class="product-value">1 кг</span>
+                        <span class="product-price">2 815<span>&nbsp;₸</span></span>
+                        <button class="product-cart"><i class="bi bi-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="product">
-                <div class="product-img"><a href=""><span class="add-wish"><i class="bi bi-suit-heart-fill"></i></span></a><img src="./img-product/apple.jpg"></div>
-                <div class="product-body">
-                    <span class="product-title">Яблоки Американка Казахстан кг</span>
-                    <div>
-                        <span>2 815 ₸/уп</span>
-                        <span><a href="#" class="product-cart"><i class="bi bi-cart-plus"></a></i></span>
-                    </div>
-                </div>
+        </div>
+        <div id="product-in" class="product-in fixed-bottom">
+            <div class="product-in-header">
+                <span>Персик</span>
+                <i onclick="closeProductIn()" class="bi bi-x-lg"></i>
+            </div>
+            <div class="product-in-body">
+                <div><img src="./img-product/apple.jpg"></div>
+                <span>1 кг</span>
+                <span>2 815 ₸</span>
+                <button onclick="addToCart()">Добавить в корзину</button>
             </div>
         </div>
     </main>
     <div class="header480 fixed-bottom">
         <a href=""><i class="bi bi-house-fill"></i></a>
         <a href=""><i class="bi bi-cart2"></i></a>
-        <a href=""><i class="bi bi-suit-heart-fill"></i></a>
+        <a href=""><i class="bi bi-telegram"></i></a>
         <a href=""><img src="./img-profile/deanwinchester.jpg"></a>
     </div>
     <footer>
@@ -146,7 +139,7 @@
                 <span>Оставьте заявку на сайте и станьте частью команды Bayer</span>
             </div>
             <div class="right">
-                <span>Оставить заявку</span>
+                Оставить заявку
             </div>
         </div>
         <div class="footer-bottom">

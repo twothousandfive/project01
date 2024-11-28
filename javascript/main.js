@@ -43,3 +43,26 @@ document.body.onload = function() {
         }
     }, 1000)
 }
+
+// Открытие/закрытие блока
+function productInCart() {
+    const productIn = document.getElementById('product-in');
+    if (productIn) {
+        productIn.classList.toggle('product-in-view'); // Переключаем класс
+    }
+}
+
+// Закрытие блока
+
+function closeProductIn() {
+    const productIn = document.getElementById('product-in');
+    const withBody = document.getElementById('body');
+    if (productIn || withBody) {
+        productIn.classList.remove('product-in-view'); // Убираем класс для скрытия
+    }
+}
+
+// Добавление в корзину (пример действия)
+function addToCart() {
+    alert('Товар добавлен в корзину!');
+}

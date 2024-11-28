@@ -1,4 +1,16 @@
 :root {
+    --bg-color: #ECF0F3;
+    --block-bg-color: #E0E5EC;
+
+    --background-dark-green-100: #12372A;
+    --color-dark-green: #12372A;
+    --background-dark-green-75: #436850;
+    --color-dark-green-75: #436850;
+    --background-dark-green-50: #ADBC9F;
+    --color-dark-green-50: #ADBC9F;
+    --background-dark-green-25: #FBFADA;
+    --color-dark-green-25: #FBFADA;
+
     --color-white: #fff;
     --color-light-grey: #e2e2e2;
     --color-dark-grey: #4e4e4e;
@@ -12,7 +24,6 @@
 }
 a {
     text-decoration: none;
-    color: #fff;
 }
 .fixed-top {
     position: fixed;
