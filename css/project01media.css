@@ -124,6 +124,9 @@
         order: 5;
         font-size: 24px;
     }
+    .title-category-in {
+        display: none;
+    }
     .discounts {
         order: 6;
         grid-template-columns: 1fr 1fr 1fr;
@@ -133,7 +136,10 @@
     .discounts > .product {
         grid-template-rows: 40% 60%;
         height: 200px;
-        border-radius: 12px;
+        border-radius: 10px;
+    }
+    .product-img > img {
+      border-radius: 10px;
     }
     .product > .product-body {
         padding: 0;
@@ -213,9 +219,9 @@
         color: #000000;
         margin: 3px 0;
         border-radius: 10px;
-        width: 70px;
+        width: 100px;
         text-align: center;
-        font-size: 22px;
+        font-size: 20px;
     }
     .product-in-body > button {
         padding: 5px 20px;
@@ -242,7 +248,7 @@
         align-items: center;
         margin: 10px 20px;
         border-radius: 10px;
-        box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
         height: 60px;
         background: var(--block-bg-color);
         z-index: 100;

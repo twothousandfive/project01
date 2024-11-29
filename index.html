@@ -25,12 +25,67 @@
        </div>
        <div class="nav">
             <a href="#"><img src="./img-profile/deanwinchester.jpg"></a>
-            <a href="#" class="cart-icon">
+            <a href="#" class="cart-icon" onclick="openCart()">
                 <i class="bi bi-cart2"></i>
                 <span>Корзина</span>
             </a>
        </div>
     </header>
+    <div class="cart-page">
+        <div class="cart-page-head"><button onclick="closeCart()"><i class="bi bi-arrow-left"></i></button><span><font>3</font>&nbsp;Корзина</span></div>
+        <div class="cart-page-body">
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="./img-product/apple.jpg"></div>
+                <div class="cart-item-body">
+                    <p>Яблоко ded w fewf ewf dw dd w de </p>
+                    <span>2 815 ₸</span>
+                    <span class="value">1 кг</span>
+                </div>
+                <div class="cart-item-count">
+                    <input type="number" value="1" min="1" max="100" step="1" inputmode="numeric">
+                    <div class="plus-minus">
+                        <button><i class="bi bi-dash"></i></button>
+                        <button><i class="bi bi-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="./img-product/apple.jpg"></div>
+                <div class="cart-item-body">
+                    <p>Яблоко ded w fewf ewf dw dd w de </p>
+                    <span>2 815 ₸</span>
+                    <span class="value">1 кг</span>
+                </div>
+                <div class="cart-item-count">
+                    <input type="number" value="1" min="1" max="100" step="1" inputmode="numeric">
+                    <div class="plus-minus">
+                        <button><i class="bi bi-dash"></i></button>
+                        <button><i class="bi bi-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="./img-product/apple.jpg"></div>
+                <div class="cart-item-body">
+                    <p>Яблоко ded w fewf ewf dw dd w de </p>
+                    <span>2 815 ₸</span>
+                    <span class="value">1 кг</span>
+                </div>
+                <div class="cart-item-count">
+                    <input type="number" value="1" min="1" max="100" step="1" inputmode="numeric">
+                    <div class="plus-minus">
+                        <button><i class="bi bi-dash"></i></button>
+                        <button><i class="bi bi-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-page-foot">
+            <div class="cart-page-total"><p>Цена:&nbsp;</p><span>8 245 ₸</span></div>
+            <div class="cart-pay"><button>Оформить заказ</button></div>
+        </div>
+    </div>
     <main>
         <div class="banner">
             <div class="banner-1">
@@ -133,7 +188,7 @@
             <audio id="audio" src="./audio/mem.mp3"></audio>
             <button id="playAudio"><i class="bi bi-play-fill"></i></button>
         </a>
-        <a href=""><i class="bi bi-cart2"></i></a>
+        <a href="#" onclick="openCart()"><i class="bi bi-cart2"></i></a>
         <a href=""><i class="bi bi-telegram"></i></a>
         <a href=""><img src="./img-profile/deanwinchester.jpg"></a>
     </div>

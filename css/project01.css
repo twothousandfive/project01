@@ -100,11 +100,184 @@ header {
 .cart-icon {
     display: flex;
     flex-direction: column;
+    color: #000000;
 }
 .cart-icon i {
     font-size: 30px;
     text-align: center;
 }
+/*Корзина*/
+.cart-page {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 400px;
+    z-index: 120;
+    background: var(--block-bg-color);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+    right: -425px;
+    transition: .5s;
+}
+.cart-page-view {
+    right: 0;
+}
+.cart-page-head {
+    height: 85px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: var(--bg-color);
+}
+.cart-page-head > button {
+    background: var(--block-bg-color);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 32px;
+    cursor: pointer;
+}
+.cart-page-head > span {
+    margin-left: 30px;
+    font-size: 26px;
+}
+.cart-page-head > span > font {
+    clip-path: circle();
+    padding: 8px;
+    font-size: 20px;
+    background: var(--block-bg-color);
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+}
+.cart-page-body {
+    height: calc(100vh - 175px);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+.cart-item {
+    width: 100%;
+    height: 100px;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 14px;
+}
+.cart-item-img {
+    width: 25%;
+    margin: 8px 0 8px 8px;
+}
+.cart-item-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cart-item-body {
+    position: relative;
+    width: 50%;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0 5px 0;
+    p {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    span {
+        position: absolute;
+        bottom: 5px;
+        font-size: 18px;
+        font-weight: 800;
+        background: var(--block-bg-color);
+        width: max-content;
+        padding: 3px 6px;
+        border-radius: 8px;
+    }
+    .value {
+        right: 0;
+        border-radius: 8px;
+    }
+}
+.cart-item-count {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 11px 0 11px 0;
+    align-items: center;
+}
+.cart-item-count > input {
+    width: 65px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    background: var(--block-bg-color);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.cart-item-count > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.cart-item-count > .plus-minus {
+    display: flex;
+    gap: 2px;
+}
+.cart-item-count > .plus-minus > button {
+    font-size: 28px;
+    border: none;
+    background: var(--block-bg-color);
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0 2px;
+}
+.cart-page-foot {
+    height: 56px;
+    padding: 5px 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: var(--bg-color);
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.02);
+}
+.cart-page-total {
+    width: 50%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+}
+.cart-pay {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.cart-pay > button {
+    padding: 5px 15px;
+    width: 100%;
+    margin-right: 40px;
+    background: var(--block-bg-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+.cart-pay > button:hover {
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.2);
+}
+.cart-pay > button:focus {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+/*Корзина*/
 main {
     padding: 20px 80px;
     display: flex;
@@ -280,7 +453,13 @@ main {
 .title-discounts {
     margin: 20px 0;
 }
+.title-category-in {
+    margin: 20px 0;
+}
 .title-discounts > span {
+    font-size: 26px;
+}
+.title-category-in > span {
     font-size: 26px;
 }
 .discounts {

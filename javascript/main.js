@@ -9,6 +9,7 @@
 // }
 // Определяем элементы интерфейса
 const pageBack = document.getElementById("page-back");
+const pageBackIcon = document.getElementById("page-back-icon");
 const pageTitleName = document.getElementById("page-title-name");
 
 // Проверяем наличие истории переходов
@@ -18,6 +19,9 @@ if (document.referrer && new URL(document.referrer).pathname !== window.location
 
     // Назначаем обработчик для кнопки "назад"
     pageBack.addEventListener("click", () => {
+        window.history.back();
+    });
+    pageBackIcon.addEventListener("click", () => {
         window.history.back();
     });
 } else {
@@ -82,6 +86,21 @@ function closeProductIn() {
         productIn.classList.remove('product-in-view'); // Убираем класс для скрытия
     }
 }
+
+// Открыть корзину
+function openCart() {
+    const cartContainer = document.querySelector('.cart-page');
+    if (cartContainer) {
+        cartContainer.classList.add('cart-page-view');
+    }
+}
+function closeCart() {
+    const cartContainer = document.querySelector('.cart-page');
+    if (cartContainer) {
+        cartContainer.classList.remove('cart-page-view');
+    }
+}
+// Открыть корзину
 
 // Добавление в корзину (пример действия)
 function addToCart() {

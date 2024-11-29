@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/project01.css">
     <link rel="stylesheet" href="./css/project01media.css">
+    <link rel="stylesheet" href="./css/in-category.css">
     <title>Фрукты</title>
 </head>
 <body id="body">
@@ -25,17 +26,41 @@
     </div>
     <div class="nav">
         <a href="#"><img src="./img-profile/deanwinchester.jpg"></a>
-        <a href="#" class="cart-icon">
+        <a href="#" class="cart-icon" onclick="openCart()">
             <i class="bi bi-cart2"></i>
             <span>Корзина</span>
         </a>
     </div>
 </header>
+<div class="cart-page">
+    <div class="cart-page-head"><button onclick="closeCart()"><i class="bi bi-arrow-left"></i></button><span><font>1</font>&nbsp;Корзина</span></div>
+    <div class="cart-page-body">
+        <div class="cart-item">
+            <div class="cart-item-img"><img src="./img-product/apple.jpg"></div>
+            <div class="cart-item-body">
+                <p>Яблоко ded w fewf ewf dw dd w de </p>
+                <span>2 815 ₸</span>
+                <span class="value">1 кг</span>
+            </div>
+            <div class="cart-item-count">
+                <input type="number" value="1" min="1" max="100" step="1" inputmode="numeric">
+                <div class="plus-minus">
+                    <button><i class="bi bi-dash"></i></button>
+                    <button><i class="bi bi-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-page-foot">
+        <div class="cart-page-total"><p>Цена:&nbsp;</p><span>2 815 ₸</span></div>
+        <div class="cart-pay"><button>Оформить заказ</button></div>
+    </div>
+</div>
 <main>
     <div class="banner">
         <div class="banner-1">
-            <h1>Фирменный интернет-магазин</h1>
-            <span>Продукты с доставкой на дом</span>
+            <h1>Фрукты</h1>
+            <span>Самое свежее</span>
         </div>
         <div class="banner-2">
             <div class="slide-1">1</div>
@@ -43,74 +68,74 @@
             <div class="slide-3">3</div>
         </div>
     </div>
-    <div class="title-discount">
-        <span>Каталог скидок</span>
-        <font onclick="discountAll()">Смотреть все <i class="bi bi-arrow-right"></i></font>
+    <div class="title-category-in">
+        <span>Фрукты</span>
     </div>
-    <div class="discount">
-        <div><img src="./img-discount/discount-1.jpg"></div>
-        <div><img src="./img-discount/discount-2.jpg"></div>
-
-        <div><img src="./img-discount/discount-1.jpg"></div>
-        <div><img src="./img-discount/discount-2.jpg"></div>
-        <div><img src="./img-discount/discount-1.jpg"></div>
-    </div>
-    <div class="title-category">
-        <span>Категорий продуктов</span>
-    </div>
-    <div class="category-product">
-        <div><a href="./page/category-product.html"><span>Фрукты</span><img src="./img-category/fruits.jpg"><i class="bi bi-arrow-right-short"></i></a></div>
-
-        <div><a href=""><span>Мясо</span><img src="./img-category/meat.jpg"><i class="bi bi-arrow-right-short"></i></a></div>
-        <div><a href=""><span>Овощи</span><img src="./img-category/vegetable.jpg"><i class="bi bi-arrow-right-short"></i></a></div>
-        <div><a href=""><span>Фрукты</span><img src="./img-category/fruits.jpg"><i class="bi bi-arrow-right-short"></i></a></div>
-    </div>
-    <div class="title-discounts">
-        <span>Скидки</span>
-    </div>
-    <div class="discounts">
-        <div class="product" onclick="productInCart()">
-            <div class="product-img"><img src="./img-product/apple.jpg"></div>
-            <div class="product-body">
-                <span class="product-title">Яблоко</span>
+    <div class="category-item">
+        <div class="item-product" onclick="productInCart()">
+            <div class="item-img"><img src="./img-product/apple.jpg"></div>
+            <div class="item-body">
+                <span class="item-title">Яблоко</span>
                 <div>
-                    <span class="product-value">1 кг</span>
-                    <span class="product-price">2 815<span>&nbsp;₸</span></span>
-                    <button class="product-cart"><i class="bi bi-cart-plus"></i></button>
+                    <span class="item-value">1 кг</span>
+                    <span class="item-price">2 815<span>&nbsp;₸</span></span>
+                    <button class="item-cart"><i class="bi bi-cart-plus"></i></button>
                 </div>
             </div>
         </div>
 
-        <div class="product" onclick="productInCart()">
-            <div class="product-img"><img src="./img-product/apple.jpg"></div>
-            <div class="product-body">
-                <span class="product-title">Яблоко</span>
+        <div class="item-product" onclick="productInCart()">
+            <div class="item-img"><img src="./img-product/apple.jpg"></div>
+            <div class="item-body">
+                <span class="item-title">Яблоко</span>
                 <div>
-                    <span class="product-value">1 кг</span>
-                    <span class="product-price">2 815<span>&nbsp;₸</span></span>
-                    <button class="product-cart"><i class="bi bi-cart-plus"></i></button>
+                    <span class="item-value">1 кг</span>
+                    <span class="item-price">2 815<span>&nbsp;₸</span></span>
+                    <button class="item-cart"><i class="bi bi-cart-plus"></i></button>
                 </div>
             </div>
         </div>
-        <div class="product" onclick="productInCart()">
-            <div class="product-img"><img src="./img-product/apple.jpg"></div>
-            <div class="product-body">
-                <span class="product-title">Яблоко</span>
+        <div class="item-product" onclick="productInCart()">
+            <div class="item-img"><img src="./img-product/apple.jpg"></div>
+            <div class="item-body">
+                <span class="item-title">Яблоко</span>
                 <div>
-                    <span class="product-value">1 кг</span>
-                    <span class="product-price">2 815<span>&nbsp;₸</span></span>
-                    <button class="product-cart"><i class="bi bi-cart-plus"></i></button>
+                    <span class="item-value">1 кг</span>
+                    <span class="item-price">2 815<span>&nbsp;₸</span></span>
+                    <button class="item-cart"><i class="bi bi-cart-plus"></i></button>
                 </div>
             </div>
         </div>
-        <div class="product" onclick="productInCart()">
-            <div class="product-img"><img src="./img-product/apple.jpg"></div>
-            <div class="product-body">
-                <span class="product-title">Яблоко</span>
+        <div class="item-product" onclick="productInCart()">
+            <div class="item-img"><img src="./img-product/apple.jpg"></div>
+            <div class="item-body">
+                <span class="item-title">Яблоко</span>
                 <div>
-                    <span class="product-value">1 кг</span>
-                    <span class="product-price">2 815<span>&nbsp;₸</span></span>
-                    <button class="product-cart"><i class="bi bi-cart-plus"></i></button>
+                    <span class="item-value">1 кг</span>
+                    <span class="item-price">2 815<span>&nbsp;₸</span></span>
+                    <button class="item-cart"><i class="bi bi-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="item-product" onclick="productInCart()">
+            <div class="item-img"><img src="./img-product/apple.jpg"></div>
+            <div class="item-body">
+                <span class="item-title">Яблоко</span>
+                <div>
+                    <span class="item-value">1 кг</span>
+                    <span class="item-price">2 815<span>&nbsp;₸</span></span>
+                    <button class="item-cart"><i class="bi bi-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="item-product" onclick="productInCart()">
+            <div class="item-img"><img src="./img-product/apple.jpg"></div>
+            <div class="item-body">
+                <span class="item-title">Яблоко</span>
+                <div>
+                    <span class="item-value">1 кг</span>
+                    <span class="item-price">2 815<span>&nbsp;₸</span></span>
+                    <button class="item-cart"><i class="bi bi-cart-plus"></i></button>
                 </div>
             </div>
         </div>
@@ -129,8 +154,8 @@
     </div>
 </main>
 <div class="header480 fixed-bottom">
-    <a href=""><i class="bi bi-house-fill"></i></a>
-    <a href=""><i class="bi bi-cart2"></i></a>
+    <a href="#" id="page-back-icon"><i class="bi bi-house-fill"></i></a>
+    <a href="#" onclick="openCart()"><i class="bi bi-cart2"></i></a>
     <a href=""><i class="bi bi-telegram"></i></a>
     <a href=""><img src="./img-profile/deanwinchester.jpg"></a>
 </div>
@@ -150,39 +175,12 @@
             <span>наполняем жизнь</span>
         </div>
         <div class="footer-bottom-nav">
-            <div class="footer-item">
-                <ul>
-                    <li>Покупателям</li>
-                    <li>Католог скидок</li>
-                    <li>Акции</li>
-                    <li>Контакты</li>
-                    <li>Опрос по ассортименту</li>
-                </ul>
+            <div>
+                <h2>В главных ролях</h2>
+                <audio id="audio" src="./audio/mem.mp3"></audio>
+                <button id="playAudio"><i class="bi bi-play-fill"></i></button>
+                <span class="typing" id="typingText"></span>
             </div>
-            <div class="footer-item">
-                <ul>
-                    <li>О компании</li>
-                    <li>Чина</li>
-                    <li>Муха</li>
-                    <li>Ras</li>
-                    <li>Tem</li>
-                </ul>
-            </div>
-            <div class="footer-item">
-                <ul>
-                    <li>Сотрудничество</li>
-                    <li>Поставщикам</li>
-                    <li>Рекламодателям</li>
-                </ul>
-            </div>
-            <div class="footer-item">
-                <ul>
-                    <li>Служба поддержки</li>
-                    <li>0504 | звонок бесплатный</li>
-                    <li>Наш телеграм бот</li>
-                </ul>
-            </div>
-
         </div>
     </div>
 </footer>
