@@ -87,3 +87,46 @@ function closeProductIn() {
 function addToCart() {
     alert('Товар добавлен в корзину!');
 }
+
+const audio = document.getElementById("audio");
+const playButton = document.getElementById("playAudio");
+const playIcon = playButton.querySelector("i");  // Иконка внутри кнопки
+const text = "конченный идиот, самый сексуальный мужик в мире, горячая чикса, злодей британец, так себе шутник, пубертатная язва, какой‑то мужик, говнюки, недопонятые гении";
+let i = 0;
+let typingInterval; // Переменная для интервала печатания текста
+const typingElement = document.getElementById("typingText");
+
+// Функция для имитации печатания текста
+function typeText() {
+    if (i < text.length) {
+        typingElement.textContent += text.charAt(i); // Добавляем один символ
+        i++;
+    } else {
+        clearInterval(typingInterval); // Останавливаем печатание, когда весь текст напечатан
+    }
+}
+
+// Обработчик для кнопки Play/Pause
+playButton.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.play();  // Воспроизводим аудио
+        playIcon.classList.remove("bi-play-fill");
+        playIcon.classList.add("bi-pause-fill");
+        typingInterval = setInterval(typeText, 400);  // Начинаем печатать текст
+    } else {
+        audio.pause();  // Ставим аудио на паузу
+        playIcon.classList.remove("bi-pause-fill");
+        playIcon.classList.add("bi-play-fill");
+        clearInterval(typingInterval);  // Останавливаем печатание текста
+    }
+});
+
+// Событие play для начала печатания текста
+audio.addEventListener("play", () => {
+    typingInterval = setInterval(typeText, 400);  // Начинаем печатать текст при воспроизведении аудио
+});
+
+// Событие pause для остановки печатания текста
+audio.addEventListener("pause", () => {
+    clearInterval(typingInterval);  // Останавливаем печатание текста, когда аудио ставится на паузу
+});
