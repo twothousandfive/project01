@@ -7,6 +7,27 @@
 //     document.getElementById("header").style.height = "65px";
 //   }
 // }
+// Определяем элементы интерфейса
+const pageBack = document.getElementById("page-back");
+const pageTitleName = document.getElementById("page-title-name");
+
+// Проверяем наличие истории переходов
+if (document.referrer && new URL(document.referrer).pathname !== window.location.pathname) {
+    // Если есть реферер (предыдущая страница), показываем кнопку "назад"
+    pageBack.classList.remove("page-back-hidden");
+
+    // Назначаем обработчик для кнопки "назад"
+    pageBack.addEventListener("click", () => {
+        window.history.back();
+    });
+} else {
+    // Скрываем кнопку "назад" на главной странице
+    pageBack.classList.add("page-back-hidden");
+}
+const pageTitle = document.title;
+pageTitleName.textContent = pageTitle; // Устанавливаем текст из тега <title>
+
+
 
 const banner = document.querySelector('.banner-2');
 const slides = banner.querySelectorAll('div');
@@ -41,7 +62,7 @@ document.body.onload = function() {
         if( !preloader.classList.contains('done')){
             preloader.classList.add('done');
         }
-    }, 1000)
+    }, 0)
 }
 
 // Открытие/закрытие блока

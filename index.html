@@ -13,10 +13,14 @@
     <div id="page-preloader" class="preloader">
         <div class="loader"></div>
     </div>
+    <div class="page-title">
+        <span class="page-back" id="page-back"><i class="bi bi-arrow-left"></i></span>
+        <span class="page-title-name" id="page-title-name"></span>
+    </div>
     <header id="header">
        <div class="logo"><a href="#">BAYER</a></div>
        <div class="search">
-            <input type="text">
+            <input type="text" id="search">
             <button><i class="bi bi-search"></i></button>
        </div>
        <div class="nav">
@@ -55,22 +59,20 @@
             <span>Категорий продуктов</span>
         </div>
         <div class="category-product">
-            <div><span>Фрукты</span><a href=""><img src="./img-category/fruits.jpg"></a></div>
-            <div><span>Овощий</span><a href=""><img src="./img-category/vegetable.jpg"></a></div>
-            <div><span>Молочные</span><a href=""><img src="./img-category/milk.jpg"></a></div>
-            <div><span>Мясо</span><a href=""><img src="./img-category/meat.jpg"></a></div>
-            <div><span>Мясо</span><a href=""><img src="./img-category/meat.jpg"></a></div>
-            <div><span>Мясо</span><a href=""><img src="./img-category/meat.jpg"></a></div>
-            <div><span>Мясо</span><a href=""><img src="./img-category/meat.jpg"></a></div>
+            <div><a href="./page/category-product.html"><span>Фрукты</span><img src="./img-category/fruits.jpg"><i class="bi bi-arrow-right-short"></i></a></div>
+
+            <div><a href=""><span>Мясо</span><img src="./img-category/meat.jpg"><i class="bi bi-arrow-right-short"></i></a></div>
+            <div><a href=""><span>Овощи</span><img src="./img-category/vegetable.jpg"><i class="bi bi-arrow-right-short"></i></a></div>
+            <div><a href=""><span>Фрукты</span><img src="./img-category/fruits.jpg"><i class="bi bi-arrow-right-short"></i></a></div>
         </div>
         <div class="title-discounts">
             <span>Скидки</span>
         </div>
         <div class="discounts">
             <div class="product" onclick="productInCart()">
-                <div class="product-img"><img src="./img-category/fruits.jpg"></div>
+                <div class="product-img"><img src="./img-product/apple.jpg"></div>
                 <div class="product-body">
-                    <span class="product-title">Персик Алматы</span>
+                    <span class="product-title">Яблоко</span>
                     <div>
                         <span class="product-value">1 кг</span>
                         <span class="product-price">2 815<span>&nbsp;₸</span></span>
@@ -79,10 +81,10 @@
                 </div>
             </div>
 
-            <div class="product">
-                <div class="product-img"><img src="./img-category/fruits.jpg"></div>
+            <div class="product" onclick="productInCart()">
+                <div class="product-img"><img src="./img-product/apple.jpg"></div>
                 <div class="product-body">
-                    <span class="product-title">Персик Алматы</span>
+                    <span class="product-title">Яблоко</span>
                     <div>
                         <span class="product-value">1 кг</span>
                         <span class="product-price">2 815<span>&nbsp;₸</span></span>
@@ -90,10 +92,10 @@
                     </div>
                 </div>
             </div>
-            <div class="product">
-                <div class="product-img"><img src="./img-category/fruits.jpg"></div>
+            <div class="product" onclick="productInCart()">
+                <div class="product-img"><img src="./img-product/apple.jpg"></div>
                 <div class="product-body">
-                    <span class="product-title">Персик Алматы</span>
+                    <span class="product-title">Яблоко</span>
                     <div>
                         <span class="product-value">1 кг</span>
                         <span class="product-price">2 815<span>&nbsp;₸</span></span>
@@ -101,10 +103,10 @@
                     </div>
                 </div>
             </div>
-            <div class="product">
-                <div class="product-img"><img src="./img-category/fruits.jpg"></div>
+            <div class="product" onclick="productInCart()">
+                <div class="product-img"><img src="./img-product/apple.jpg"></div>
                 <div class="product-body">
-                    <span class="product-title">Персик Алматы</span>
+                    <span class="product-title">Яблоко</span>
                     <div>
                         <span class="product-value">1 кг</span>
                         <span class="product-price">2 815<span>&nbsp;₸</span></span>
@@ -115,7 +117,7 @@
         </div>
         <div id="product-in" class="product-in fixed-bottom">
             <div class="product-in-header">
-                <span>Персик</span>
+                <span>Яблоко</span>
                 <i onclick="closeProductIn()" class="bi bi-x-lg"></i>
             </div>
             <div class="product-in-body">

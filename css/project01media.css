@@ -1,8 +1,27 @@
 @media (max-width: 480px) {
+    .page-title {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+    }
+    .page-back {
+        font-size: 30px;
+    }
+    .page-back-hidden {
+        display: none;
+    }
+    .page-title-name {
+        margin: auto;
+        font-size: 26px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
     header {
         height: 40px;
         padding: 10px 15px;
         background: transparent;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0);
     }
     .logo {
         display: none;
@@ -17,11 +36,11 @@
         font-size: larger;
         padding-left: 50px;
         background: var();
-        color: var(--background-dark-green-25);
+        color: #000;
+        letter-spacing: 1px;
     }
     .search > button {
-        background: var(--background-dark-green-100);
-        color: var(--background-dark-green-25);
+        background: var(--block-bg-color);
     }
     .search input:focus {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 10px 0px;
@@ -60,8 +79,40 @@
         height: max-content;
         
     }
-    .category-product > div {
-        height: 140px;
+    .category-product > div > a {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 15px;
+        align-items: center;
+        background: var(--block-bg-color);
+
+    }
+    .category-product > div > a > img {
+        height: 110px;
+        width: 130px;
+        order: 1;
+    }
+    .category-product > div > a > span {
+        top: unset;
+        left: unset;
+        transform: none;
+        position: relative;
+        padding: 0;
+        background: none;
+        text-align: start;
+        order: 2;
+        opacity: 1;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .category-product > div > a > i {
+        display: block;
+        color: #000000;
+        font-size: 40px;
+        order: 3;
+        margin-left: auto;
+        font-weight: 600;
     }
     .title-discounts {
         color: var(--background-dark-green-100);
@@ -96,12 +147,14 @@
     }
     .product-in {
         display: block;
-        bottom: -400px;
+        bottom:  -100%;
         z-index: 110;
-        background: var(--background-dark-green-100);
-        height: 60%;
+        background: var(--block-bg-color);
+        height: max-content;
         border-radius:25px 25px 0 0;
         transition: .5s;
+        padding-bottom: 15px;
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.7);
     }
     .product-in-view {
         bottom: 0;
@@ -112,7 +165,7 @@
         text-align: center;
         padding: 10px;
         gap: 5px;
-        color: var(--background-dark-green-25);
+        color: #000;
     }
     .product-in-header > span {
         padding-left: 35px;
@@ -127,40 +180,52 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
-        background: var(--background-dark-green-25);
+        background: var(--block-bg-color);
+        gap: 2px;
     }
     .product-in-body > div {
         width: 350px;
         height: 200px;
         padding-top: 5px;
         margin-bottom: 2px;
+        background: transparent;
     }
     .product-in-body > div > img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        border-radius: 10px;
+        border: none;
+        border-radius: 15px;
     }
     .product-in-body > span {
         padding: 5px 20px;
-        background: var(--background-dark-green-100);
-        color: var(--background-dark-green-25);
+        background: var(--block-bg-color);
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+        color: #000000;
         margin: 3px 0;
         border-radius: 10px;
         width: 70px;
         text-align: center;
-        font-size: 18px;
+        font-size: 22px;
     }
     .product-in-body > button {
         padding: 5px 20px;
         width: 350px;
-        font-size: 16px;
-        color: var(--background-dark-green-25);
-        height: 40px;
+        font-size: 20px;
+        color: #000000;
+        height: 45px;
         border-radius: 10px;
         border: none;
         margin-top: 3px;
-        background: var(--background-dark-green-100);
+        background: var(--block-bg-color);
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+        &:focus {
+            box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        }
+        &:active {
+            box-shadow: #D6D6E7 0 3px 7px inset;
+            transform: translateY(2px);
+        }
     }
     .header480 {
         display: flex;
