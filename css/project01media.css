@@ -21,7 +21,7 @@
         font-weight: 600;
     }
     header {
-        height: 40px;
+        height: 50px;
         padding: 10px 15px;
         background: transparent;
         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0);
@@ -50,6 +50,10 @@
     }
     .nav {
         display: none;
+    }
+    /*Корзина*/
+    .cart-page-body {
+        height: calc(100% - 175px);
     }
     main {
         padding: 10px 15px;
