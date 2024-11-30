@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/log-up-in.css">
+</head>
+<body class="body-log">
+    <div class="main">
+        <div class="img-log">
+            <img src="./img-other/welcome.png">
+            <button class="log-up" onclick="signUp()">Sign Up</button>
+            <button class="log-in" onclick="signIn()">Sign In</button>
+        </div>
+    </div>
+    <div class="sign-up">
+        <h1>Create account</h1>
+        <form action="#" method="GET">
+            <input type="text" name="username" placeholder="Username" class="username">
+            <input type="text" name="firstname" placeholder="First name">
+            <input type="text" name="lastname" placeholder="Last name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="radio" id="seller" name="type" value="seller">
+            <label for="seller">Seller</label>
+            <input type="radio" id="client" name="type" value="client">
+            <label for="client">Client</label>
+            <button type="submit">Sign Up</button>
+        </form>
+        <span>Уже есть аккаунта? <span style="cursor: pointer; color: deepskyblue; font-weight: 600;" onclick="signIn()">Войти</span></span>
+    </div>
+    <div class="sign-in">
+        <h1>Sign In</h1>
+        <form action="#">
+            <input type="text" placeholder="Username" class="username">
+            <input type="password" placeholder="Password">
+            <button>Sign In</button>
+        </form>
+        <span>Нет аккаунта? <span style="cursor: pointer; color: deepskyblue; font-weight: 600;" onclick="signUp()">Создать</span></span>
+    </div>
+</body>
+<script src="./javascript/sign-up-in.js"></script>
+</html>

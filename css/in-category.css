@@ -41,7 +41,7 @@
     color: #000000;
 }
 .item-value {
-    padding: 3px 15px;
+    padding: 3px 8px;
     font-size: 20px;
     background: var(--block-bg-color);
     box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.8);
@@ -51,7 +51,7 @@
     align-items: center;
 }
 .item-price {
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -61,7 +61,7 @@
     background: var(--block-bg-color);
     box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.8);
     color: #000000;
-    padding: 3px 15px;
+    padding: 3px 8px;
     border-radius: 8px;
     border: none;
     font-size: 28px;

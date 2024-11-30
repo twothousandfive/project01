@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,800,900');
 :root {
     --bg-color: #ECF0F3;
     --block-bg-color: #E0E5EC;
@@ -21,6 +22,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Nunito';
 }
 a {
     text-decoration: none;
