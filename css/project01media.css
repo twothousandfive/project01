@@ -52,6 +52,12 @@
         display: none;
     }
     /*Корзина*/
+    .scroll {
+        overflow-y: scroll;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
     .cart-page-body {
         height: calc(100% - 175px);
     }

@@ -88,16 +88,19 @@ function closeProductIn() {
 }
 
 // Открыть корзину
+const body = document.body;
 function openCart() {
     const cartContainer = document.querySelector('.cart-page');
     if (cartContainer) {
         cartContainer.classList.add('cart-page-view');
+        body.classList.add('no-scroll');
     }
 }
 function closeCart() {
     const cartContainer = document.querySelector('.cart-page');
     if (cartContainer) {
         cartContainer.classList.remove('cart-page-view');
+        body.classList.remove('no-scroll');
     }
 }
 // Открыть корзину
