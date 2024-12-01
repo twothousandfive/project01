@@ -75,7 +75,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 170px;
+    height: 190px;
     background-color: #007bff;
     color: white;
     font-size: 14px;
@@ -115,5 +115,8 @@
     }
     .add-container > form > button, input, select, option {
         text-align: center;
+    }
+    .custom-file-label {
+        height auto;
     }
 }
