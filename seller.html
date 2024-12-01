@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/project01.css">
+    <link rel="stylesheet" href="./css/project01media.css">
+    <link rel="stylesheet" href="./css/seller.css">
+    <title>Seller</title>
+</head>
+<body class="body-seller">
+    <div class="header-seller">
+        <div class="logo-seller"><a href="#">BAYER</a></div>
+        <div class="nav-seller">
+            <a href="#"><img src="./img-profile/deanwinchester.jpg"></a>
+        </div>
+    </div>
+    <div class="main-seller">
+        <div class="banner-seller">
+            <a href="add-product.html"><div>Добавить товар</div></a>
+            <a href="#" id="openMyOrders"><div>Заказы</div></a>
+        </div>
+    </div>
+    <div id="myOrders" class="my-orders">
+        <div class="orders-content">
+            <span class="close-my-orders">&times;</span>
+            <h2>Мой заказы</h2>
+            <div>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Клиент Муха</button>
+                        <div class="accordion-content">
+                            <span>
+                                <span>Продукт</span>
+                                <span>Яблоко de def f</span>
+                            </span>
+                            <span>
+                                <span>Количество</span>
+                                <span>5</span>
+                            </span>
+                            <span>
+                                <span>Метод оплаты</span>
+                                <span>Kaspi</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">Клиент Расул</button>
+                        <div class="accordion-content">
+                            <span><span>Продукт</span><span>Яблоко de def f</span></span>
+                            <span><span>Количество</span><span>3</span></span>
+                            <span><span>Метод оплаты</span><span>Банк карточкасымен</span></span>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Клиент Расул</button>
+                        <div class="accordion-content">
+                            <span><span>Продукт</span><span>Яблоко de def f</span></span>
+                            <span><span>Количество</span><span>3</span></span>
+                            <span><span>Метод оплаты</span><span>Банк карточкасымен</span></span>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Клиент Расул</button>
+                        <div class="accordion-content">
+                            <span><span>Продукт</span><span>Яблоко de def f</span></span>
+                            <span><span>Количество</span><span>3</span></span>
+                            <span><span>Метод оплаты</span><span>Банк карточкасымен</span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="my-product-title">Мой продукты</div>
+    <div class="my-product-tabs">
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab(event, 'tab1')">Мясо</button>
+            <button class="tab-button" onclick="openTab(event, 'tab2')">Фрукты</button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">Овощи</button>
+            <button class="tab-button" onclick="openTab(event, 'tab4')">Молочные</button>
+        </div>
+
+        <!-- Содержимое вкладок -->
+        <div id="tab1" class="tab-content active">
+            <div class="product-seller" onclick="productInCart()">
+                <div class="product-img-seller"><img src="./img-product/apple.jpg"></div>
+                <div class="product-body-seller">
+                    <span class="product-title-seller">Яблоко dsf ef d sf f fefdsfdsf</span>
+                    <div>
+                        <span>2 815<span>&nbsp;₸</span></span>
+                        <span>360 кг</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-seller" onclick="productInCart()">
+                <div class="product-img-seller"><img src="./img-product/apple.jpg"></div>
+                <div class="product-body-seller">
+                    <span class="product-title-seller">Яблоко dsf ef d sf f fefdsfdsf</span>
+                    <div>
+                        <span>2 815<span>&nbsp;₸</span></span>
+                        <span>360 кг</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tab2" class="tab-content">
+            <div class="product-seller" onclick="productInCart()">
+                <div class="product-img-seller"><img src="./img-product/apple.jpg"></div>
+                <div class="product-body-seller">
+                    <span class="product-title-seller">Яблоко dsf ef d sf f fefdsfdsf</span>
+                    <div>
+                        <span>2 815<span>&nbsp;₸</span></span>
+                        <span>360 кг</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-seller" onclick="productInCart()">
+                <div class="product-img-seller"><img src="./img-product/apple.jpg"></div>
+                <div class="product-body-seller">
+                    <span class="product-title-seller">Яблоко dsf ef d sf f fefdsfdsf</span>
+                    <div>
+                        <span>2 815<span>&nbsp;₸</span></span>
+                        <span>360 кг</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-seller" onclick="productInCart()">
+                <div class="product-img-seller"><img src="./img-product/apple.jpg"></div>
+                <div class="product-body-seller">
+                    <span class="product-title-seller">Яблоко dsf ef d sf f fefdsfdsf</span>
+                    <div>
+                        <span>2 815<span>&nbsp;₸</span></span>
+                        <span>360 кг</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-seller" onclick="productInCart()">
+                <div class="product-img-seller"><img src="./img-product/apple.jpg"></div>
+                <div class="product-body-seller">
+                    <span class="product-title-seller">Яблоко dsf ef d sf f fefdsfdsf</span>
+                    <div>
+                        <span>2 815<span>&nbsp;₸</span></span>
+                        <span>360 кг</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-seller" onclick="productInCart()">
+                <div class="product-img-seller"><img src="./img-product/apple.jpg"></div>
+                <div class="product-body-seller">
+                    <span class="product-title-seller">Яблоко dsf ef d sf f fefdsfdsf</span>
+                    <div>
+                        <span>2 815<span>&nbsp;₸</span></span>
+                        <span>360 кг</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-seller" onclick="productInCart()">
+                <div class="product-img-seller"><img src="./img-product/apple.jpg"></div>
+                <div class="product-body-seller">
+                    <span class="product-title-seller">Яблоко dsf ef d sf f fefdsfdsf</span>
+                    <div>
+                        <span>2 815<span>&nbsp;₸</span></span>
+                        <span>360 кг</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tab3" class="tab-content">
+
+        </div>
+        <div id="tab4" class="tab-content">
+
+        </div>
+    </div>
+</body>
+<script src="./javascript/seller.js"></script>
+</html>
