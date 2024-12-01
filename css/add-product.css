@@ -99,6 +99,7 @@
     }
     .add-container {
         width: 85%;
+        height: 70%;
         padding: 10px;
     }
     .add-container > form {
@@ -115,8 +116,5 @@
     }
     .add-container > form > button, input, select, option {
         text-align: center;
-    }
-    .custom-file-label {
-        height auto;
     }
 }
